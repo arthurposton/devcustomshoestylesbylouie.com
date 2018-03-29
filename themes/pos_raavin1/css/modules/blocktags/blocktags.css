@@ -1,0 +1,5 @@
+.tags_block .block_content { overflow: hidden; }
+
+.tags_block .block_content a { display: inline-block; font-size: 12px; text-transform: capitalize; font-weight: 400; line-height: 30px; padding: 0 25px; border: 1px solid #e5e5e5; color: #393939; margin: 0 5px 5px 0; -webkit-transition: all 300ms ease-in; -moz-transition: all 300ms ease-in; -ms-transition: all 300ms ease-in; -o-transition: all 300ms ease-in; transition: all 300ms ease-in; }
+
+.tags_block .block_content a:hover { color: #fff; border-color: #393939; background: #393939; -webkit-transition: all 300ms ease-in; -moz-transition: all 300ms ease-in; -ms-transition: all 300ms ease-in; -o-transition: all 300ms ease-in; transition: all 300ms ease-in; }

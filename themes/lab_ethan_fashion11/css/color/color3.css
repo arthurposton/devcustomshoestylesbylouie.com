@@ -1,0 +1,62 @@
+/* color:#f9c831  */
+#header .cart_block a:hover,#header .cart_block .price,#header .cart_block .price,
+.lab-menu-horizontal ul li.level-1 > a.active, .lab-menu-horizontal ul li.level-1 > a:hover,
+.lab-menu-horizontal ul li.level-1 ul li a:hover,.lab-menu-horizontal ul li.level-1 ul li.parent:hover::after,
+.popup_title h2,#search_block_top .current:hover, #search_block_top .current.active,
+#search_block_top .button:hover,.laberthemes .title_block span,#special_products .lab_boxnp a:hover,
+.price.product-price,.product-name a:hover,#special_products h4 span,#pos-special-products .product-name:hover,
+#pos-special-products .lab-price .price,.sdsblog-box-content .content-blog .labname a,
+.sdsblog-box-content .content-blog .read-more,
+.lab_static .text h4,.lab_static .text h2,.lab_static .img .static_text p,
+.lab_static .img .static_text h4,.subpage .lab-menu-horizontal ul.menu-content li:first-child > a:hover,
+.breadcrumb,.breadcrumb a:hover,.block .title_block, .block h4,.page-heading,#layered_block_left .layered_subtitle,
+.content_sortPagiBar .display li.selected a, .content_sortPagiBar .display_m li.selected a,
+.content_sortPagiBar .display li a:hover i, .content_sortPagiBar .display_m li a:hover i,
+.block .title_block a, .block h4 a,.pb-center-column h1,.our_price_display .price,
+.right-block .lab-quick-view a span,
+.more-info-ii .idTabs li a,.testimonials .item .des_namepost,#blockinstagram h4{
+	color:#f9c831;
+}
+
+/* background-color:#f9c831 */
+header .nav .toogle_content li > span, header .nav .toogle_content li.selected a,
+ header .nav .toogle_content li a:hover, .displayTop .toogle_content li a:hover,
+ .cart_block .cart-buttons a#button_order_cart:hover span,
+ .lablistproducts .actions li a.active, .lablistproducts .actions li a.checked, 
+ .lablistproducts .actions li a:hover,.lab_static .text a,
+ .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default,
+ .ui-widget-header,.top-pagination-content ul.pagination li.active > span span, 
+ .bottom-pagination-content ul.pagination li.active > span span,
+ ul.product_list.list > li .lab-button-container .add-to-links li a.checked, 
+ ul.product_list.list > li .lab-button-container .add-to-links li a:hover,
+ ul.product_list.list > li .lab-button-container .lab-cart .button:hover,
+ .top-pagination-content ul.pagination li > a:hover span,
+ .bottom-pagination-content ul.pagination li > a:hover span,
+ .box-info-product .exclusive.added span, .box-info-product .exclusive:hover span,
+ #usefull_link_block li a:hover::before, .box-cart-bottom #wishlist_button_nopop:hover::before,
+ .more-info-ii .idTabs li a.selected, .more-info-ii .idTabs li a:hover,
+ .sale-label,.tags_block .block_content a:hover,.testimonials .owl-page span,
+ .right-block .lab-quick-view a span:hover
+ {
+	background-color:#f9c831
+}
+/* border-color:#f9c831 */
+.cart_block .cart-buttons a#button_order_cart:hover span,
+.lablistproducts .actions li a.active, .lablistproducts .actions li a.checked, 
+.lablistproducts .actions li a:hover,.block .title_block::before, .block h4::before,
+.top-pagination-content ul.pagination li.active > span span, 
+.bottom-pagination-content ul.pagination li.active > span span,
+.top-pagination-content ul.pagination li.active > span, 
+.bottom-pagination-content ul.pagination li.active > span,
+ul.product_list.list > li .lab-button-container .add-to-links li a.checked,
+ ul.product_list.list > li .lab-button-container .add-to-links li a:hover, 
+ul.product_list.list > li .lab-button-container .lab-cart .button:hover,
+.top-pagination-content ul.pagination li > a:hover,.tags_block .block_content a:hover,
+ .bottom-pagination-content ul.pagination li > a:hover,.right-block .lab-quick-view a span,
+ .box-info-product .exclusive.added span, .box-info-product .exclusive:hover span,
+ #usefull_link_block li a:hover::before, .box-cart-bottom #wishlist_button_nopop:hover::before,
+ .page-heading::before,.more-info-ii .idTabs li a.selected, .more-info-ii .idTabs li a:hover,
+ .right-block .lab-quick-view a span:hover
+ {
+	border-color:#f9c831
+}

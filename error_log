@@ -1,0 +1,8 @@
+[01-Jan-2018 03:47:31 UTC] PHP Notice:  Undefined variable: id_lang in /home/sa7rru46ljhy/public_html/dev/prestashop/classes/LocalizationPack.php on line 84
+[01-Jan-2018 03:47:32 UTC] PHP Notice:  Undefined variable: id_lang in /home/sa7rru46ljhy/public_html/dev/prestashop/classes/LocalizationPack.php on line 84
+[01-Jan-2018 04:34:42 UTC] PHP Notice:  Undefined index: tabid in /home/sa7rru46ljhy/public_html/dev/prestashop/modules/labcountdown/labcountdown.php on line 55
+[01-Jan-2018 04:34:42 UTC] PHP Notice:  Undefined index: tabid in /home/sa7rru46ljhy/public_html/dev/prestashop/modules/labcountdown/labcountdown.php on line 55
+[01-Jan-2018 04:44:54 UTC] PHP Notice:  Undefined index: tabid in /home/sa7rru46ljhy/public_html/dev/prestashop/modules/labcountdown/labcountdown.php on line 55
+[01-Jan-2018 04:44:54 UTC] PHP Notice:  Undefined index: tabid in /home/sa7rru46ljhy/public_html/dev/prestashop/modules/labcountdown/labcountdown.php on line 55
+[14-Feb-2018 07:41:39 UTC] PHP Notice:  Undefined variable: id_lang in /home/sa7rru46ljhy/public_html/dev/prestashop/classes/LocalizationPack.php on line 84
+[14-Feb-2018 07:41:40 UTC] PHP Notice:  Undefined variable: id_lang in /home/sa7rru46ljhy/public_html/dev/prestashop/classes/LocalizationPack.php on line 84

@@ -1,0 +1,79 @@
+@import "compass";
+@import "../../theme_variables";
+#currencies-block-top {
+	position: relative;
+	margin-bottom:10px;
+	// min 992px
+	@media (min-width: $screen-md) {
+
+	}
+	span.firstWord {
+		display: none;
+	}
+	&:hover 	 {
+		div.current_active {
+			color:$hover-color;
+		}
+		ul {
+			display:block;
+		}
+	}
+	div.current_active {
+		text-shadow:none;
+		cursor: pointer;
+		font-size:14px;
+		text-transform:capitalize;
+		position: relative;
+		overflow: hidden;
+		color: #666666;
+		line-height: 35px;
+		font-weight: 400;
+		border:$main_border;
+		text-align:center;
+		strong {
+			font-weight:normal;
+		}
+		&:after {
+			content: "\f107";
+			font-family: $font-icon;
+			font-size: 15px;
+			line-height: 1;
+			padding-left: 7px;
+			color:#2f2f2f;
+			display:inline-block;
+		}
+		img {
+			margin-right:7px;
+		}
+	}
+	ul {	
+		position:absolute;
+		top:37px;
+		left:0;
+		right:0;
+		background:$light-background;
+		min-width: 130px;
+		z-index: 2;
+		text-transform: capitalize;
+		display:none;
+		li {
+			direction: ltr;
+			color:#666666;
+			line-height: 40px;
+			font-size: 13px;
+			border:$main_border;
+			border-top:0;
+			padding:0 20px;
+			a,
+			> span {
+				padding: 0 5px;
+				display: inline-block;
+				color: #666666;
+			}
+			&.selected, &:hover a {
+				color:$hover-color;
+			}
+			
+		}
+	}
+}

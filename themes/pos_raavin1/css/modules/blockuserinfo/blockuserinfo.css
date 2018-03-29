@@ -1,0 +1,21 @@
+.header_userinfo { position: relative; margin-bottom: 10px; }
+
+.header_userinfo .top-userinfo ul { background: #fff; min-width: 130px; z-index: 2; text-transform: capitalize; }
+
+.header_userinfo .top-userinfo ul li { color: #666666; line-height: 40px; font-size: 14px; border-bottom: 1px solid #ebebeb; }
+
+.header_userinfo .top-userinfo ul li a { position: relative; }
+
+.header_userinfo .top-userinfo ul li a:before { font-family: "FontAwesome"; margin-right: 7px; }
+
+.header_userinfo .top-userinfo ul li a.link-myaccount:before { content: "\f007"; }
+
+.header_userinfo .top-userinfo ul li a.link-wishlist:before { content: "\f004"; }
+
+.header_userinfo .top-userinfo ul li a.link-checkout:before { content: "\f046"; }
+
+.header_userinfo .top-userinfo ul li a.login:before { content: "\f13e"; }
+
+.header_userinfo .top-userinfo ul li a.logout:before { content: "\f13e"; }
+
+.header_userinfo .top-userinfo ul li:hover a { color: #cb9a00; }

@@ -1,0 +1,46 @@
+@import "compass";
+@import "../../theme_variables";
+.header_userinfo {
+	position: relative;
+	margin-bottom:10px;
+	.top-userinfo {
+		ul {
+			background:$light-background;
+			min-width: 130px;
+			z-index: 2;
+			text-transform: capitalize;
+			li {
+				color:#666666;
+				line-height: 40px;
+				font-size: 14px;
+				border-bottom:$main_border;
+				a {
+					position:relative; 
+					&:before {
+						font-family: $font-icon;
+						margin-right:7px;
+					}
+					&.link-myaccount:before {
+						content: "\f007";
+					}
+					&.link-wishlist:before {
+						content: "\f004";
+					}
+					&.link-checkout:before {
+						content: "\f046";	
+					}
+					&.login:before {
+						content: "\f13e";	
+					}
+					&.logout:before {
+						content: "\f13e";	
+					}
+				}
+				&:hover a {
+					color:$hover-color;
+				}
+				
+			}
+		}
+	}
+}

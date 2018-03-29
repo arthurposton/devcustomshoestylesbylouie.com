@@ -1,0 +1,472 @@
+/*
+ * jQuery Nivo Slider v3.1
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+ 
+/* The Nivo Slider styles */
+
+.labbannerSlide{
+    position: relative;
+    z-index: 10;
+	margin-bottom:50px;
+}
+.nivoSlider {
+	position:relative; 
+	width:100%;
+	height:auto;
+	overflow: hidden;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;  
+	left:0px;
+	max-width: none;
+}
+.nivo-main-image {
+	display: block !important;
+	position: relative !important; 
+	width: 100% !important;
+}
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+	top:0;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+	overflow:hidden;
+}
+.nivo-box img { display:block; }
+
+/* Caption styles */
+.nivo-caption {
+	bottom: 0;
+    display: none;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 8;
+	margin:0 auto;
+}
+.nivo-caption p {
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-prevNav {
+	left:-60px;
+}
+.nivo-nextNav {
+	right:-60px;
+}
+#lab-slideshow:hover .nivo-prevNav{
+	left:0;
+}
+#lab-slideshow:hover .nivo-nextNav{
+	
+	right:0;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+    bottom: 20px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+.nivo-controlNav a {
+    background:none;
+	border:1px solid #0a0a0a; 
+    cursor: pointer;
+    display: inline-block;
+    height: 12px;
+    margin: 0 5px;
+    text-indent: -999em;
+    width: 12px;
+	-webkit-border-radius:100%;
+	-moz-border-radius:100%;
+	-ms-border-radius:100%;
+	-o-border-radius:100%;
+	border-radius:100%;
+	-webkit-transition: all 900ms ease;
+	-moz-transition: all 900ms ease;
+	-ms-transition: all 900ms ease;
+	-o-transition: all 900ms ease;
+	transition: all 900ms ease;
+}
+.nivo-controlNav a:hover ,
+.nivo-controlNav a.active {
+	font-weight:bold;
+	background:#0a0a0a;
+	border-color:transparent;
+}
+#lab-slideshow{
+	height:550px;
+	overflow:hidden;
+}
+#lab-slideshow.nivoSlider{
+	display:block;
+	height:auto;
+}
+#lab-slideshow,
+.lab-nivoSlideshow{
+	position:relative;
+}
+
+.nivo-caption .description {
+	color: #ffffff;
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 50px;
+    z-index: 11;
+}
+.nivo-caption .description h5{
+	color: #bc8246;
+    font-family: Raleway;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 400;
+    margin: -20px 0 0;
+    text-transform: uppercase;
+}
+.nivo-caption .description strong{
+	color:#010101;
+}
+.lab_description.active .description {
+	-webkit-animation: slideInLeft 900ms ease-in-out;
+	-moz-animation: slideInLeft 900ms ease-in-out;
+	-ms-animation: slideInLeft 900ms ease-in-out;
+	animation: slideInLeft 900ms ease-in-out;
+}
+.lab_description.active.left .description {
+	-webkit-animation: slideInLeft 900ms ease-in-out;
+	-moz-animation: slideInLeft 900ms ease-in-out;
+	-ms-animation: slideInLeft 900ms ease-in-out;
+	animation: slideInLeft 900ms ease-in-out;
+}
+.lab_description.active.right .description {
+	-webkit-animation: slideInRight 900ms ease-in-out;
+	-moz-animation: slideInRight 900ms ease-in-out;
+	-ms-animation: slideInRight 900ms ease-in-out;
+	animation: slideInRight 900ms ease-in-out;
+}
+/* ...................................... */
+.nivo-caption .title{
+	display:block;
+}
+.nivo-caption .title h4{
+     color: #ffffff;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1;
+    position: relative;
+    text-transform: capitalize;
+    z-index: 10;
+}
+.nivo-caption .left.style1 .title h4{
+	font-family: "Playfair Display",serif;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.nivo-caption .left.style2 .title h4{
+	color: #1c1c1c;
+    font-family: Roboto,sans-serif;
+    font-size: 36px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+.lab_description.active  .title h4{
+	-webkit-animation: slideInLeft 900ms ease-in-out;
+	-moz-animation: slideInLeft 900ms ease-in-out;
+	-ms-animation: slideInLeft 900ms ease-in-out;
+	animation: slideInLeft 900ms ease-in-out;
+}
+.lab_description.active.left  .title h4{
+	-webkit-animation: slideInLeft 900ms ease-in-out;
+	-moz-animation: slideInLeft 900ms ease-in-out;
+	-ms-animation: slideInLeft 900ms ease-in-out;
+	animation: slideInLeft 900ms ease-in-out;
+}
+.lab_description.active.right  .title h4{
+	-webkit-animation: slideInRight 900ms ease-in-out;
+	-moz-animation: slideInRight 900ms ease-in-out;
+	-ms-animation: slideInRight 900ms ease-in-out;
+	animation: slideInRight 900ms ease-in-out;
+}
+/* style2 */
+.lab_description.style2 .title h4 span.word1{
+	color: #3cd2fe;
+}
+.lab_description.style2 .title h4 span.word2{
+	color: #fff;
+}
+.lab_description.style2 .title h4:before{
+	border-color:#999999;
+}
+/* ........................................... */
+.nivo-caption .lab_caption{
+	display:inline-block;
+}
+.nivo-caption .lab_caption{
+	color: #ffffff;
+    display: block;
+    font-family: "Playfair Display",serif;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    line-height: 1;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    z-index: 11;
+}
+.nivo-caption .left.style1 .lab_caption{
+	margin-bottom:45px;
+}
+.nivo-caption .left.style2 .lab_caption{
+	 color: #1c1c1c;
+    font-family: Roboto,sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+.lab_description.active .lab_caption{
+	-webkit-animation: slideInLeft 900ms ease-in-out;
+	-moz-animation: slideInLeft 900ms ease-in-out;
+	-ms-animation: slideInLeft 900ms ease-in-out;
+	animation: slideInLeft 900ms ease-in-out;
+}
+.lab_description.active.left .lab_caption{
+	-webkit-animation: slideInLeft 900ms ease-in-out;
+	-moz-animation: slideInLeft 900ms ease-in-out;
+	-ms-animation: slideInLeft 900ms ease-in-out;
+	animation: slideInLeft 900ms ease-in-out;
+}
+.lab_description.active.right .lab_caption{
+	-webkit-animation: slideInRight 900ms ease-in-out;
+	-moz-animation: slideInRight 900ms ease-in-out;
+	-ms-animation: slideInRight 900ms ease-in-out;
+	animation: slideInRight 900ms ease-in-out;
+}
+/* ############################################# */
+.lab_description{display:none;}
+.nivo-caption .lab_description{
+	position:absolute;
+	bottom: 30%;
+	left: 15px;
+	right:15px;
+	padding:0;
+	margin:0 auto;
+	overflow:hidden;
+	padding:15px;
+	display:block;
+}
+
+.nivo-caption .lab_description.center{
+	text-align:center;
+}
+.nivo-caption .lab_description.left {
+    bottom: 34%;
+    right: 36%;
+    text-align: center;
+}
+.nivo-caption .lab_description.right {    
+    bottom: 26%;
+    left: 30%;
+    text-align: center;
+}
+.nivo-caption .readmore{
+	z-index: 10;
+}
+.lab_description.active  .readmore{
+	-webkit-animation: slideInLeft 900ms ease-in-out;
+	-moz-animation: slideInLeft 900ms ease-in-out;
+	-ms-animation: slideInLeft 900ms ease-in-out;
+	animation: slideInLeft 900ms ease-in-out;
+}
+.lab_description.active.left  .readmore{
+	-webkit-animation: slideInLeft 900ms ease-in-out;
+	-moz-animation: slideInLeft 900ms ease-in-out;
+	-ms-animation: slideInLeft 900ms ease-in-out;
+	animation: slideInLeft 900ms ease-in-out;
+}
+.lab_description.active.right  .readmore{
+	-webkit-animation: slideInRight 900ms ease-in-out;
+	-moz-animation: slideInRight 900ms ease-in-out;
+	-ms-animation: slideInRight 900ms ease-in-out;
+	animation: slideInRight 900ms ease-in-out;
+}
+.nivo-caption .readmore a{
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    display: inline-block !important;
+    font-size: 13px;
+    font-weight: 400;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 25px;
+    text-transform: capitalize;
+}
+.nivo-caption .left.style2 .readmore a{
+	color: #2a2a2a;
+    border-color: #2a2a2a;
+}
+.nivo-caption .left.style2 .readmore a:hover{
+	color: #fff;
+}
+.nivo-caption .readmore a i{
+	color:#dc9814;
+	font-size:13px;
+	padding:0 10px;
+}
+.nivo-caption .readmore a:hover{
+	color:#fff;
+	background:#2a2a2a;
+	border-color:#2a2a2a;
+}
+.nivo-prevNav,.nivo-nextNav{
+	background:rgba(255, 255, 255, 0.6) none repeat scroll 0 ;
+    color: #5f5f5f;
+    display: inline-block;
+    font-size: 24px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+	-webkit-transition: all 300ms ease-in;
+	-moz-transition: all 300ms ease-in;
+	-ms-transition: all 300ms ease-in;
+	-o-transition: all 300ms ease-in;
+	transition: all 300ms ease-in;
+}
+.nivo-prevNav:hover,.nivo-nextNav:hover{
+	background:#fff ;
+}
+	@-webkit-keyframes myfirst {
+		from {width: 0;}
+		to {width: 100%;}
+	}
+	@-moz-keyframes myfirst {
+		from {width: 0;}
+		to {width: 100%;}
+	}
+	@keyframes myfirst {
+		from {width: 0;}
+		to {width: 100%;}
+	}
+	.timeline{
+		z-index:10;
+	}
+	.timeline.lab_hover{
+		-webkit-animation-play-state: paused !important;
+		animation-play-state: paused !important;
+	}
+	
+.lab-nivoSlideshow{
+	clear:both;
+	overflow:hidden;
+}
+.lab-loading{
+	background: #15161b url("../images/loading.gif") no-repeat scroll center center;
+    bottom: 0;
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.nivo-caption .lab_description{
+		bottom:15px;
+		width:auto;
+	}
+	#lab-slideshow{
+		height:435px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.nivo-caption .lab_description{
+		bottom:15px;
+		width:auto;
+	}
+	.labbannerSlide{
+		margin-bottom:30px;
+	}
+	#lab-slideshow{
+		height:320px;
+	}
+	.nivo-caption .title h4 {
+		font-size: 20px;
+	}
+	.nivo-caption .lab_caption{
+		font-size:25px;
+	}
+	.nivo-caption .description h5{
+		font-size:60px;
+		margin:0;
+	}
+	.nivo-caption .description{
+		margin-bottom:15px;
+		font-size: 12px;
+	}
+	.nivo-caption .lab_description.left {
+		bottom: 26%;
+	}
+	.nivo-caption .left.style1 .title h4{
+		 font-size: 20px;
+	}
+	.nivo-caption .left.style2 .title h4{font-size: 25px;}
+}
+@media (max-width: 767px) {
+	.labbannerSlide {
+		margin-bottom: 20px;
+	}
+	.nivo-caption .lab_description{
+		display:none;
+	}
+	.nivo-controlNav{
+		bottom:5px;
+	}
+
+	.labbannerSlide{
+		clear:both;
+	}
+}

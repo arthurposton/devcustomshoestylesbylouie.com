@@ -1,0 +1,126 @@
+.labpopupnewsletter {display: none;}
+.labpopup .fancybox-skin .fancybox-close {
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+   background-color: #202020;
+    border: 3px solid #ffffff;
+    border-radius: 100%;
+    color: #ffffff;
+    height: 30px;
+    line-height: 18px;
+    right: -15px;
+    text-align: center;
+    top: -18px;
+    width: 30px;
+    z-index: 8;
+}
+.labpopup .fancybox-skin .fancybox-close:hover{
+	background-color:#535353;
+}
+.labpopup .fancybox-skin .fancybox-close:after {
+    font-family: "ElegantIcons";
+    content: "\4d";
+    font-size: 18px;
+	font-weight:bold;
+}
+#newsletter_block_popup {
+	bottom: 60px;
+    right: 85px;
+    margin: 0;
+    position: absolute;
+	 text-align: center;
+	 width: 295px;
+}
+#newsletter_block_popup .block_content{
+    display: inline-block;
+    padding-bottom: 70px;
+}
+.labpopup .inputNew {
+	background: #ffffff none repeat scroll 0 0;
+    border: 1px solid #e9e9e9;
+    color: #ababab;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+    padding: 0 15px;
+    text-transform: none;
+    width: 295px;
+}
+.popup_title h2{
+	color: #1a1a1a;
+	font-size: 24px;
+    font-weight: 300;
+    margin: 0 0 20px;
+    text-transform: capitalize;
+}
+.popup_text {
+	color: #6b6b6b;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    max-width: 295px;
+    padding-bottom: 40px;
+}
+.button_unique {
+	background-color: #202020;
+    border: medium none;
+    clear: both;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 400;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 35px;
+    text-align: center;
+    text-transform: none;
+    transition:all 0.3s ease-in-out 0s; -webkit-transition:all 0.3s ease-in-out 0s; -moz-transition:all 0.3s ease-in-out 0s;
+}
+.button_unique:hover{
+    background: #535353;
+}
+.send-response {
+    font: normal 16px "Open Sans";
+    color:#990000;
+    padding-bottom: 5px;
+}
+.newsletter_block_popup-bottom{
+     bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+.newsletter_block_popup-bottom label{
+	color: #6b6b6b;
+    font-size: 13px;
+    font-weight: 400;
+}
+#uniform-newsletter_popup_dont_show_again{
+	display: inline;
+    margin-right: 10px;
+    padding-top: 5px;
+}
+
+.fancybox-close-overlay {
+    cursor: pointer;
+    height: 30px;
+    position: absolute;
+    right: -15px;
+    top: -18px;
+    width: 30px;
+    z-index: 9;
+}
+@media (min-width: 991px) and (max-width: 1024px) {
+	
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.labpopup .inputNew{
+		background-color:#fff;
+	}
+}
